@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SSP Backend",
+			"type": "shell",
+			"command": "${workspaceFolder}/server/venv/Scripts/python.exe",
+			"args": ["run_server.py"],
+			"options": {
+				"cwd": "${workspaceFolder}/server"
+			},
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "SSP Frontend",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"--prefix",
+				"client",
+				"run",
+				"dev",
+				"--",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"5173"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

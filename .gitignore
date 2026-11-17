@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+.env.local
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+uploads/*
+!uploads/.gitkeep
+# Local development database snapshots can contain user records and password hashes.
+server/data/local_mock_db.json
+server/data/local_mock_db.tmp
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
